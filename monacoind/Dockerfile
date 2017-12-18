@@ -46,4 +46,4 @@ VOLUME ["/root/.monacoin"]
 # P2P = 9401, RPC = 9402
 EXPOSE 9401 9402
 
-CMD ["monacoind"]
+CMD ["monacoind", "-reindex"]

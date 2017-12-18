@@ -17,7 +17,7 @@ RUN git clone https://github.com/aftorn/unified-node-open-mining-portal.git unom
 WORKDIR /usr/src/app/unomp
 RUN npm update
 
-VOLUME /usr/src/app/unomp/pool_configs
+VOLUME /usr/src/app/unomp
 
 EXPOSE 80 3008 3032 3256
 CMD [ "node", "init.js" ]

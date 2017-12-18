@@ -13,7 +13,8 @@ nvm use stable
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN git clone https://github.com/aftorn/unified-node-open-mining-portal.git unomp
+#RUN git clone https://github.com/aftorn/unified-node-open-mining-portal.git unomp
+RUN mkdir -p /usr/src/app/unomp
 WORKDIR /usr/src/app/unomp
 RUN npm update
 

@@ -3,6 +3,7 @@ FROM ubuntu:16.04
 # RUN locale-gen en_US.UTF-8
 # ENV LANG en_US.utf8
 # ENV LC_ALL en_US.UTF-8
+ENV opt -reindex
 
 RUN apt-get update && apt-get install -y \
     autoconf \
@@ -46,4 +47,4 @@ VOLUME ["/root/.monacoin"]
 # P2P = 9401, RPC = 9402
 EXPOSE 9401 9402
 
-CMD ["monacoind", "-reindex"]
+CMD ["monacoind", "$opt"]

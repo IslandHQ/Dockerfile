@@ -1,1 +1,1 @@
-# monacoind buuild docker
+# monacoind build docker

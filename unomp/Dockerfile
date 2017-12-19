@@ -18,7 +18,9 @@ RUN mkdir -p /usr/src/app/unomp
 WORKDIR /usr/src/app/unomp
 RUN npm update
 
-VOLUME /usr/src/app/unomp
+VOLUME /usr/src/app/unomp/
+VOLUME /usr/src/app/unomp/pool_config
+VOLUME /usr/src/app/unomp/coins
 
 EXPOSE 80 3008 3032 3256
 CMD [ "node", "init.js" ]

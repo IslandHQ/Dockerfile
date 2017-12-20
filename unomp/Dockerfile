@@ -15,6 +15,7 @@ WORKDIR /usr/src/app
 
 RUN git clone https://github.com/aftorn/unified-node-open-mining-portal.git unomp
 WORKDIR /usr/src/app/unomp
+RUN git clone https://github.com/UNOMP/node-merged-pool.git node_modules/stratum-pool
 RUN npm update
 
 VOLUME /usr/src/app/unomp/

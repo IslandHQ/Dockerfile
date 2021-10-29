@@ -1,0 +1,12 @@
+version: '3'
+services:
+  wallabag:
+    image: zedeus/nitter
+    ports:
+            - "8143:8080"
+    volumes:
+            - $PWD/nitter.conf:/src/nitter.conf
+    healthcheck:
+      test: ["CMD", "wget" ,"--no-verbose", "--tries=1", "--spider", "http://localhost"]
+      interval: 1m
+      timeout: 3s

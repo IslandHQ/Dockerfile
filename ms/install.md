@@ -8,7 +8,7 @@
 
 ```curl https://raw.githubusercontent.com/turtle0x1/LxdMosaic/master/examples/install_with_clone.sh >> installLxdMosaic.sh```
 
-```chmod +x installLxdMosaic.s```
+```chmod +x installLxdMosaic.sh```
 
 ```./installLxdMosaic.sh```
 

@@ -22,7 +22,7 @@ sudo wget https://github.com/cloudflare/cloudflared/releases/latest/download/clo
 
 ```config.yml
 tunnel: <Tunnel-UUID>
-credentials-file: <Tunnel-UUID>.json
+credentials-files: <Tunnel-UUID>.json
 
 ingress:
   - hostname: test-1.example.com

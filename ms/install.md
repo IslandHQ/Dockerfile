@@ -23,7 +23,7 @@ lxc config set docker-host security.privileged true
 lxc config set docker-host security.nesting true
 ```
 
-```apt update && apt upgrade -y && apt install docker.io && docker run hello-world```
+```apt update && apt upgrade -y && apt install docker.io -y && docker run hello-world```
 
 # install gossa(file browser)
 ```wget https://github.com/pldubouilh/gossa/releases/download/v0.2.0/gossa-linux-x64```

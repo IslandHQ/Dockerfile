@@ -6,7 +6,7 @@
 
 # download
 ```sh
-sudo -i && wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && mv ./cloudflared-linux-amd64 /usr/local/bin/cloudflared && chmod a+x /usr/local/bin/cloudflared && cloudflared update
+sudo wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && sudo mv ./cloudflared-linux-amd64 /usr/local/bin/cloudflared && sudo chmod a+x /usr/local/bin/cloudflared && sudo cloudflared update
 ```
 
 # login
